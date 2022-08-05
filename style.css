@@ -1,0 +1,62 @@
+body {
+  background-color: #20374Aff;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.banniere {
+
+  background-image: url("../image/etude.jpg");
+  background-size: 125em 100%;
+  background-repeat: no-repeat;
+  padding-top: 300px;
+  padding-bottom: 250px;
+
+
+}
+
+/*Positionnement de l'image en haut à droite*/
+.logo img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 99px;
+
+}
+
+
+.tp {
+  text-align: center;
+  color: white;
+}
+
+.box {
+  width: 45%;
+  height: 250px;
+  color: white;
+  background: #B76245ff;
+  margin: 20px 20px 20px;
+  display: inline-block;
+  /*Cette valeur amène un élément à générer un conteneur de bloc au niveau de la ligne. */
+  border: solid #312721ff 1px;
+
+
+
+}
+
+/*Mise en page */
+.box h1 {
+  min-height: 10em;
+  /*la taille de la police de caractères*/
+
+  text-align: center;
+  /* justify-content: center;*/
+  margin-left: 50%;
+
+  writing-mode: vertical-rl;
+  /*permet d'inverser le texte*/
+  text-orientation: mixed;
+  /*définit l'orientation du texte sur une ligne*/
+}
