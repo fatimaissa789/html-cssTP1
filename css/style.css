@@ -31,6 +31,10 @@ body {
   text-align: center;
   color: white;
 }
+#first{
+  padding-left: 85px;
+ 
+}
 
 .box {
   width: 45%;
@@ -40,7 +44,8 @@ body {
   margin: 20px 20px 20px;
   display: inline-block;
   /*Cette valeur amène un élément à générer un conteneur de bloc au niveau de la ligne. */
-  border: solid #312721ff 1px;
+  border: solid rgb(166, 123, 96) 3px;
+  border-radius: 3px;
 
 
 
