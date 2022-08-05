@@ -1,14 +1,15 @@
 body {
   background-color: #20374Aff;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 
 
 }
 
 .banniere {
 
- background-image: url("../image/etude.jpg");
-  background-size:125em 100%;
+  background-image: url("../image/etude.jpg");
+  background-size: 125em 100%;
   background-repeat: no-repeat;
   padding-top: 300px;
   padding-bottom: 250px;
@@ -19,54 +20,43 @@ body {
 /*Positionnement de l'image en haut à droite*/
 .logo img {
   position: absolute;
-  
   top: 0px;
   right: 0px;
   width: 99px;
 
 }
 
-header .banniere .name {
-  color: white;
-  float: right
-}
-
-.dessous {
-  clear: both;
-  text-align: center;
-  margin-bottom: -105px;
-  float: right;
-}
 
 .tp {
   text-align: center;
   color: white;
 }
-/**/
-section .first{
-  margin: 100px;
-}
+
 .box {
-  padding-left:1px;
   width: 45%;
   height: 250px;
   color: white;
   background: #B76245ff;
   margin: 20px 20px 20px;
-  display: inline-block;/*Cette valeur amène un élément à générer un conteneur de bloc au niveau de la ligne. */
+  display: inline-block;
+  /*Cette valeur amène un élément à générer un conteneur de bloc au niveau de la ligne. */
   border: solid #312721ff 1px;
- 
 
-  
+
+
 }
+
 /*Mise en page */
 .box h1 {
-  min-height: 10em;/*la taille de la police de caractères*/
+  min-height: 10em;
+  /*la taille de la police de caractères*/
 
   text-align: center;
- /* justify-content: center;*/
+  /* justify-content: center;*/
   margin-left: 50%;
 
-  writing-mode: vertical-rl;/*permet d'inverser le texte*/
-  text-orientation: mixed;/*définit l'orintation du texte sur une ligne*/
+  writing-mode: vertical-rl;
+  /*permet d'inverser le texte*/
+  text-orientation: mixed;
+  /*définit l'orientation du texte sur une ligne*/
 }
