@@ -1,44 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Mon premier TP</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        
-        <header>
-            <div class="banniere">
-                <div class="logo">
-                    <img src="image/logo.png" alt="logo">
+
+<head>
+    <title>Mon premier TP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="banniere">
+            <div class="logo">
+                <img src="image/logo.png" alt="logo">
+            </div>
+
+
+        </div>
+    </header>
+    <!--Debut des sections en blocs -->
+
+    <!---->
+
+    <section id="first">
+        <h1 class="tp">Mon premier TP: Mame Fatima Ndiaye</h1>
+
+       
+
+
+            <div id="container">
+                <div id = "box"class="box">
+                    <h1 class="text" id="text">Bloc1</h1>
                 </div>
 
+                <div id= "box1"class="box">
+                    <h1 class="text" id="text1">Bloc2</h1>
+
+                </div>
+
+                <div id="box2" class="box">
+                    <h1 class="text" id="text2">Bloc3</h1>
+
+                </div>
+                <div id ="box3" class="box">
+                    <h1 class="text" id="text3">Bloc4</h1>
+
+                </div>
 
             </div>
-        </header>
-         <!--Debut des sections en blocs -->
 
-        <!---->
 
-        <section id="first">
-            <h1 class="tp">Mon premier TP: Mame Fatima Ndiaye</h1>
-            <div class="box">
-                <h1>Bloc1</h1>
-            </div>
-            <div class="box">
-                <h1>Bloc2</h1>
-            </div>
-            <div class="box">
-                <h1>Bloc3</h1>
-            </div>
-            <div class="box">
-                <h1>Bloc4</h1>
-            </div>
-        </section>
-        <!---->
-       
-     <!--Fin des sections en blocs-->
+              
+                <div id="button-color">
+                    <button class="bouton" id="button" onclick="text()">Cliquer</button>
+                </div>
+            
+         
 
-    </body>
+    </section>
+    <form method="post" action="index.html">    
+        <div  class="contact" id="contact">
+              <div class="name">
+                <label class="info" for="">Nom:</label>  
+                <input id="nom" type="text" class="form"   name="nom" required><br> <br/>
+                <label  class="info"for="">Télèphone:</label>
+                <input id="number" type="number" class="form"  name="telephone" required><br> <br/>
+                <label  class="info" for="">Email:</label> 
+                <input  id="mail" type="email" class="form"  name="email" required><br> <br/>
+                <label  class="info" for="">Objet:</label> 
+                <input id="objet"type="text"  class="form" name="objet"><br><br>
+                 <textarea id="msg" placeholder="Votre message ici..." class="msg" rows="9" name="message" required></textarea><br><br>
+                 <label class="checkbox"><input type="checkbox" > Signer pour notre newsletter</label>
+                 <button onclick ="addtable();"class="btn">Envoyer</button>
+              </div>
+              
+              
+        </div>
+     </form>
+     <table id="affichage">
+        <tr>
+            <th>Nom</th>
+            <th>Telephone</th>
+            <th>mail</th>
+            <th>objet</th>
+            <th>msg</th>
+            
+        </tr>
+    </table>
+
+    <!--Lien avec le js-->
+    <script src="js/script.js">
+
+    </script>
+
+    <!--Fin des sections en blocs-->
+
+</body>
+
 </html>

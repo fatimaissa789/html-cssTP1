@@ -2,7 +2,7 @@ body {
   background-color: #20374Aff;
   margin: 0;
   padding: 0;
-
+  
 
 }
 
@@ -31,12 +31,21 @@ body {
   text-align: center;
   color: white;
 }
-#first{
+/*#first{
   padding-left: 85px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgba(red, green, blue);
  
-}
+}*/
 
-.box {
+#container {
+ 
+
+
+
+}
+.box{
   width: 45%;
   height: 250px;
   color: white;
@@ -47,12 +56,13 @@ body {
   border: solid rgb(166, 123, 96) 3px;
   border-radius: 3px;
 
-
-
 }
 
+
+
+
 /*Mise en page */
-.box h1 {
+.text{
   min-height: 10em;
   /*la taille de la police de caractères*/
 
@@ -64,4 +74,133 @@ body {
   /*permet d'inverser le texte*/
   text-orientation: mixed;
   /*définit l'orientation du texte sur une ligne*/
+}
+
+#button-color{
+  display: flex;
+  justify-content: center;
+
+}
+button  {
+  
+  background-color: #20374Aff;
+  width: 99px;
+  height: 50px;
+  border-radius: 15px;
+  border:2px solid #B76245ff;
+  color: white;
+ 
+}
+form{
+  display: flex;
+  padding-left: 30%;
+  padding-top: 25px;
+}
+.contact 
+{
+    width: 50%;
+    height: 45%;
+    background: #276180ff;
+    
+    padding: 15px;
+   /* position: absolute;*/
+   
+    border-radius: 15px;
+    border: #86A5BAff solid 1px;
+}
+
+
+.form
+ {
+    width: 35%;
+
+}
+.info{
+  color: white;
+}
+
+.msg 
+{
+    width: 95%;
+
+}
+.btn 
+{
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    color: black;
+    padding: 6px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 50%;
+    
+    justify-content: left;
+
+}
+
+.btn:hover 
+{
+    background-color: #50321Aff;
+    color: white;
+}
+
+#haut 
+{
+    position: absolute;
+    right: 0%;
+}
+
+/**/
+@media screen and (max-width:500px){
+  .banniere {
+
+    background-image: url("../image/etude.jpg");
+    background-size: 125em 100%;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    display: none;
+    padding-bottom: 250px;
+  
+  
+  }
+#container{
+  align-items: center;
+  flex-direction: column;
+  padding-left: 58px;
+
+}
+  .box{
+    width: 60%;
+    height: 150px;
+    color: white;
+    background: #B76245ff;
+    margin: 20px 20px 20px;
+    display: inline-block;
+
+    /*Cette valeur amène un élément à générer un conteneur de bloc au niveau de la ligne. */
+    border: solid rgb(166, 123, 96) 3px;
+    border-radius: 3px;
+  
+  }
+  .text{
+    min-height: 1em;
+    /*la taille de la police de caractères*/
+  
+    text-align: center;
+    /* justify-content: center;*/
+    margin-left: 50%;
+    padding-top: 20%;
+   
+    writing-mode: vertical-rl;
+
+    /*permet d'inverser le texte*/
+    text-orientation: mixed;
+    color: red;
+    /*permet d'inverser le texte*/
+    /*définit l'orientation du texte sur une ligne*/
+  }
+  
+  
+  
 }
