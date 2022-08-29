@@ -65,22 +65,28 @@
             <legend><strong style="color: white; font-size: large;">Nom et Prénom</strong></legend>
             <p>
                 <label for="prenom" style="color: white; font-size: large;">Nom:</label>
-                <input type="text"  name="nom" id="nom">
+                <input type="text" class="form-control"  name="nom" id="nom">
+                <div id="prenom-erreur" style="color: red;"></div>
             </p>
             <p>
                 <label for="prenom" style="color: white; font-size: large;">Prénom:</label>
-                <input type="text" name="prenom" id="prenom">
+                <input type="text" class="form-control"  name="prenom" id="prenom">
+                <div id="nom-erreur" style="color: red;"></div>
             </p>
         </fieldset>
         
         <fieldset>
             <legend><strong style="color: white;">Commentaire</strong></legend>
+           
             <textarea 
+            class="form-control"
             name="texteFormulaire" 
             id="texteFormulaire" 
             cols="30" 
             rows="10">
         </textarea>
+        <div id="message-erreur"></div>
+       
         </fieldset>
     </form>
     <button id="boutton" class="">Envoyer</button>
