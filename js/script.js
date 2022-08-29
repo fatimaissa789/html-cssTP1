@@ -12,7 +12,7 @@ function text(){
     
     
        
-        console.log("le texte a changé")
+        console.log("le texte a changé"); 
     
         let container2 = document.getElementById("text1");
         container2.style.color = colorText[randomColorText];
@@ -52,27 +52,41 @@ button.addEventListener('click', function(){
 }
 
 )
-//Por le formulaire
+//Pour le formulaire
+
+let btnEnvoyerFormulaire = document.getElementById("boutton");
+console.log(btnEnvoyerFormulaire);
 
 
-function addtable(){
-    var table =document.getElementById("contact"),
-    newRow= table.inserRow(table.length),
-    cell1 = newRow.inserCell(0),
-    cell2= newRow.inserCell(1),
-    cell3=newRow.inserCell(2),
+btnEnvoyerFormulaire.addEventListener("click", function() {
+    //récuperer les données du formulaire
+   var name =document.getElementById("nom").value;
+   console.log(name);
 
-    nom = document.getElementById("nom").value,
-    number = document.getElementById("number").value,
-    mail = document.getElementById("mail").value,
-    objet = document.getElementById("objet").value,
-    msg = document.getElementById("msg").value;
+   var prenom =document.getElementById("prenom").value;
+   console.log(prenom);
 
-    cell1.innerHTML=nom,
-    cell2.innerHTML=number,
-    cell3.innerHTML=mail,
-    cell1.innerHTML=objet,
-    cell1.innerHTML=msg;
+   var formulaire =document.getElementById("texteFormulaire").value;
+   console.log(formulaire);
+    //stocker les données dans le localStorage
+   localStorage.setItem("Nom",name);
+    localStorage.setItem("Prénom",prenom);
+    localStorage.setItem("Formulaire",formulaire);
 
 
-}
+    //recuperer et afficher les donnés
+    var monnom=localStorage.getItem('Nom');
+      document.querySelector("#leNom").innerHTML = monnom;
+     
+     var monprenom = localStorage.getItem('Prénom');
+      document.querySelector("#lePrenom").innerHTML = monprenom;
+
+      var monform = localStorage.getItem('Formulaire');
+      document.querySelector("#leTexteFormulaire").innerHTML = monform;
+      //document.getElementById("#leTexteFormulaire").innerHTML = localStorage.getItem("le nom");
+
+
+});
+
+
+

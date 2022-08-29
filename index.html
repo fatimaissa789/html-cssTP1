@@ -58,37 +58,38 @@
             
          
 
-    </section>
-    <form method="post" action="index.html">    
-        <div  class="contact" id="contact">
-              <div class="name">
-                <label class="info" for="">Nom:</label>  
-                <input id="nom" type="text" class="form"   name="nom" required><br> <br/>
-                <label  class="info"for="">Télèphone:</label>
-                <input id="number" type="number" class="form"  name="telephone" required><br> <br/>
-                <label  class="info" for="">Email:</label> 
-                <input  id="mail" type="email" class="form"  name="email" required><br> <br/>
-                <label  class="info" for="">Objet:</label> 
-                <input id="objet"type="text"  class="form" name="objet"><br><br>
-                 <textarea id="msg" placeholder="Votre message ici..." class="msg" rows="9" name="message" required></textarea><br><br>
-                 <label class="checkbox"><input type="checkbox" > Signer pour notre newsletter</label>
-                 <button onclick ="addtable();"class="btn">Envoyer</button>
-              </div>
-              
-              
-        </div>
-     </form>
-     <table id="affichage">
-        <tr>
-            <th>Nom</th>
-            <th>Telephone</th>
-            <th>mail</th>
-            <th>objet</th>
-            <th>msg</th>
-            
-        </tr>
-    </table>
-
+    </section> 
+    <form action="">
+        
+        <fieldset>
+            <legend><strong style="color: white; font-size: large;">Nom et Prénom</strong></legend>
+            <p>
+                <label for="prenom" style="color: white; font-size: large;">Nom:</label>
+                <input type="text"  name="nom" id="nom">
+            </p>
+            <p>
+                <label for="prenom" style="color: white; font-size: large;">Prénom:</label>
+                <input type="text" name="prenom" id="prenom">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend><strong style="color: white;">Commentaire</strong></legend>
+            <textarea 
+            name="texteFormulaire" 
+            id="texteFormulaire" 
+            cols="30" 
+            rows="10">
+        </textarea>
+        </fieldset>
+    </form>
+    <button id="boutton" class="">Envoyer</button>
+   
+    <h1 style="color: white;padding-left: 450px;">Le nom est :<span style="color:#B76245ff ;"id="leNom"></span></h1>
+    <h1 style="color: white;padding-left: 450px;">Le prénom est: <span style="color:#B76245ff ;" id="lePrenom"></span></h1>
+    <h1 style="color: white;padding-left: 450px;"> Le texte que vous avez entrer: <span style="color:#B76245ff ;"id="leTexteFormulaire"></span></h1>
+     
+    
     <!--Lien avec le js-->
     <script src="js/script.js">
 

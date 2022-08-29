@@ -50,8 +50,9 @@ body {
   height: 250px;
   color: white;
   background: #B76245ff;
-  margin: 20px 20px 20px;
+  margin:20px 30px 20px;
   display: inline-block;
+ /* display: inline-block;*/
   /*Cette valeur amène un élément à générer un conteneur de bloc au niveau de la ligne. */
   border: solid rgb(166, 123, 96) 3px;
   border-radius: 3px;
@@ -79,20 +80,36 @@ body {
 #button-color{
   display: flex;
   justify-content: center;
+  
 
 }
 button  {
   
   background-color: #20374Aff;
-  width: 99px;
+  width: 80px;
   height: 50px;
-  border-radius: 15px;
-  border:2px solid #B76245ff;
+  border-radius: 20px;
+  border:1px solid #B76245ff;
+
+  color: white;
+ 
+
+ 
+}
+#boutton{
+  background-color: #20374Aff;
+  width: 80px;
+  height: 50px;
+  border-radius: 20px;
+  border:1px solid #B76245ff;
+  margin-top: 15px;
+ margin-left:50%;
   color: white;
  
 }
 form{
-  display: flex;
+  display: block;
+  width: 450px;
   padding-left: 30%;
   padding-top: 25px;
 }
@@ -110,46 +127,11 @@ form{
 }
 
 
-.form
- {
-    width: 35%;
 
-}
-.info{
-  color: white;
+fieldset{
+  margin-left: 160px;
 }
 
-.msg 
-{
-    width: 95%;
-
-}
-.btn 
-{
-    transition-duration: 0.4s;
-    border-radius: 10px;
-    color: black;
-    padding: 6px 12px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 50%;
-    
-    justify-content: left;
-
-}
-
-.btn:hover 
-{
-    background-color: #50321Aff;
-    color: white;
-}
-
-#haut 
-{
-    position: absolute;
-    right: 0%;
-}
 
 /**/
 @media screen and (max-width:500px){
