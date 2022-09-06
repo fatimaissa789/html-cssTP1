@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>My page title</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <style>
+      * {box-sizing:border-box}
+
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Here is our main header that is used across all the pages of our website -->
+
+      <!-- Here is our main header that is used across all the pages of our website -->
+
+      <header>
+        <h1>Header</h1>
+      </header>
+  
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our team</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+  
+        <!-- A Search form is another common non-linear way to navigate through a website. -->
+  
+        <form>
+          <input type="search" name="q" placeholder="Search query">
+          <input type="submit" value="Go!">
+        </form>
+      </nav>
+  
+      <!-- Here is our page's main content -->
+      <main>
+        <aside>
+          <h2>Related</h2>
+  
+          <ul>
+            <li><a href="#">Oh I do like to be beside the seaside</a></li>
+            <li><a href="#">Oh I do like to be beside the sea</a></li>
+            <li><a href="#">Although in the North of England</a></li>
+            <li><a href="#">It never stops raining</a></li>
+            <li><a href="#">Oh well...</a></li>
+          </ul>
+        </aside>
+        <br>
+  
+        <!-- It contains an article -->
+        <article>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade" style="display: block;">
+              
+              <img src="img/slide1.gif" style="width:100% ; height: 150%;">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              
+              <img src="img/slide2.jpg" style="width:100%">
+             
+            </div>
+            
+            <div class="mySlides fade">
+             
+              <img src="img/slide3.jpeg" style="width:100%">
+              
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div  style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            </div>
+            
+           
+        </article>
+  
+        <!-- the aside content can also be nested within the main content -->
+        <aside>
+          <h2>Related</h2>
+  
+          <ul>
+            <li><a href="#">Oh I do like to be beside the seaside</a></li>
+            <li><a href="#">Oh I do like to be beside the sea</a></li>
+            <li><a href="#">Although in the North of England</a></li>
+            <li><a href="#">It never stops raining</a></li>
+            <li><a href="#">Oh well...</a></li>
+          </ul>
+        </aside>
+  
+      </main>
+  
+      <!-- And here is our main footer that is used across all the pages of our website -->
+  
+      <footer>
+        <p>©Copyright 2050 by nobody. All rights reversed.</p>
+      </footer>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>

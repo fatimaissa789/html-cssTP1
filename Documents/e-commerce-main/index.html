@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Intitulé de ma page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+          HTML5 fonctionne correctement avec les anciennes versions de
+          Internet Explorer-->
+  <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- Voici notre en‑tête principale utilisée dans toutes les pages
+          de notre site web -->
+  <header>
+    <img src="img/SN_W27_USER_BANNER_900x46_V2.jpg" alt="">
+  </header>
+  <div>
+    <div class="icons">
+      <i class="fa-solid fa-star"></i>
+      <a href="" style="color: orange;">Vendez sur jumia</a>
+      <div class="icons-right">
+        <i class="fa-solid fa-burger"></i>
+        <a href="" style="color: orange;">food</a>
+
+        <div class="blue">
+          <i class="fa-solid fa-handshake"></i>
+          <a href="" class="blue">deals</a>
+        </div>
+        <div class="orange">
+          <i class="fa-solid fa-box"></i>
+          <a href="" class="orange">logistique</a>
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+  <nav>
+    <!--Logo-->
+    <div class="logo">
+      <img src="img/images.png" alt="jumia" width="102px">
+    </div>
+
+    <!-- Un formulaire de recherche est une autre façon de naviguer de
+            façon non‑linéaire dans un site. -->
+
+
+    <form>
+
+
+      <input type="text" class="icon-search" value placeholder="Search">
+      <input type="submit" value="Rechercher !">
+    </form>
+
+    <ul>
+      <li><i class="fa-solid fa-user"></i><a href="#">Se connecter </a> <i class="fa-solid fa-chevron-down"></i></li>
+      <li><i class="fa-solid fa-circle-question"></i><a href="#">Aide</a><i class="fa-solid fa-chevron-down"></i></li>
+      <li> <i class="fa-solid fa-store"></i><a href="#">Panier</a></li>
+
+    </ul>
+	
+   
+
+
+  </nav>
+  <label>☰</label>
+
+  <!-- Ici nous mettons le contenu de la page -->
+  <main>
+
+    <!-- Il contient un article -->
+    <aside>
+      <div class="left">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-mobile-screen"></i>Télèphone & tablette</a></li>
+          <li><a href="#"><i class="fa-solid fa-apple-whole"></i>Supermarché</a></li>
+          <li><a href="#"><i class="fa-regular fa-shopify"></i>Santé et beauté</a></li>
+          <li><a href="#"><i class="fa-solid fa-plug"></i>Electronique</a></li>
+          <li><a href="#"><i class="fa-solid fa-plug"></i>Informatique</a></li>
+          <li><a href="#"><i class="fa-solid fa-house"></i>Maison et bureau</a></li>
+          <li><a href="#"><i class="fa-brands fa-shopify"></i>Mode</a></li>
+          <li><a href="#"><i class="fa-solid fa-baby"></i>Produits pour Bébés</a></li>
+          <li><a href="#"><i class="fa-solid fa-baseball"></i>Article de sport</a></li>
+          <li><a href="#"><i class="fa-brands fa-playstation"></i>Jeux vidéos & Consoles</a></li>
+          <li><a href="#"><i class="fa-solid fa-certificate"></i>Autres catégories</a></li>
+        </ul>
+
+      </div>
+
+    </aside>
+    <!-- It contains an article -->
+    <div class="slider">
+      <!-- fade css -->
+      <div class="myslide fade" style="display: block;">
+
+        <img src="img/slide1.gif" style="width: 100%; height: 100%;">
+      </div>
+
+      <div class="myslide fade">
+
+        <img src="img/slide3.jpeg" style="width: 100%; height: 100%;">
+      </div>
+
+      <div class="myslide fade">
+
+        <img src="img/slide4.jpg" style="width: 100%; height: 100%;">
+      </div>
+
+      <div class="myslide fade">
+
+        <img src="img/slide5.jpg" style="width: 100%; height: 100%;">
+      </div>
+      <!-- /fade css -->
+
+      <!-- onclick js -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dotsbox" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <!-- /onclick js -->
+    </div>
+
+
+    <!-- Le contenu « à côté » peut aussi être intégré dans le contenu
+            principal -->
+    <aside>
+      <div class="slide-left">
+        <div class="aside2">
+          <ul>
+            <li><img src="img/help-centerv4.png" alt="" width="25px"><a href="#" style="text-align: center;">Centre d'assistance</a></li>
+            <li><img src="img/help-centerv4.png" alt="" width="25px"><a href="#" style="text-align: center;">Appel</a></li>
+            <li><img src="img/help-centerv4.png" alt="" width="25px"><a href="#" style="text-align: center;">Vendez sur jumia</a></li>
+          </ul>
+  
+        </div>
+        <div class="img">
+          <img src="img/pub.gif" alt="">
+  
+        </div>
+
+      </div>
+     
+
+
+
+    </aside>
+
+
+
+
+  </main>
+
+  <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
+  <footer>
+
+    <section class="product">
+
+      <div class="box-slide" id="boxSlide">
+
+        <button class="nxt-btn" onclick="slide()">&#10094;</button>
+        <button class="pre-btn" onclick="slide()">&#10095;</button>
+        <div class="product-container">
+
+
+          <img src="img/footer1.jpg" alt="footer1">
+          <img src="img/footer2.jpg" alt="">
+          <img src="img/footer3.jpg" alt="">
+          <img src="img/footer4.jpg" alt="">
+          <img src="img/footer5.jpg" alt="">
+          <img src="img/footer6.jpg" alt="">
+          <img src="img/footer7.jpg" alt="">
+          <img src="img/footer8.jpeg" alt="">
+          <img src="img/footer9.jpg" alt="">
+          <img src="img/footer10.jpg" alt="">
+          <img src="img/footer7.jpg" alt="">
+          <img src="img/footer8.jpeg" alt="">
+          <img src="img/footer9.jpg" alt="">
+          <img src="img/footer10.jpg" alt="">
+
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
